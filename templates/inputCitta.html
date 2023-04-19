@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risultato</title>
+</head>
+<body>
+    <form action='/citta' method="get">
+        <p>Inserisci la città:</p>
+        {% for citta in cities %}
+            <a href="/citta/{{citta}}"><p>{{citta}}</p></a>
+        {% endfor %}
+         
+        <input type="submit" value="Conferma">
+    </form>
+</body>
+</html>
